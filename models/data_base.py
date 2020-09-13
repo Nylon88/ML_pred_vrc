@@ -25,7 +25,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 # エンジンの作成
-engine = create_engine('mysql+pymysql://root:@localhost:3306/mysql?charset=utf8')
+#　databaseへのログインはそちらの方でご用意ください
+engine = create_engine('*******')
 Session = scoped_session(sessionmaker(bind=engine))
 Base = declarative_base()
 lock = threading.Lock()
