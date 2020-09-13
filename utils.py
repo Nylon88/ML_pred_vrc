@@ -34,9 +34,9 @@ class Bitmex:
     def __init__(self):
         self.bitmex = self.generate_test()
         self.tools = GetTools()
-
-    def generate_test(self, api_key='SV1EBOnarbdvj0UMo2SF7mpU',
-                      secret='HZVLIcSNwIfW_kDXNZW823__KoRoPclue_CA3cSvZNVmMph2'):
+    # api keyとprivate keyはご自身の方でご用意ください
+    def generate_test(self, api_key='**********',
+                      secret='*********'):
         # bitmexオブジェクトの作成
         bitmex = ccxt.bitmex({
             'apiKey': api_key,
